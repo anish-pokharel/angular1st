@@ -9,9 +9,11 @@ export class AppComponent {
   title = 'my-first-project';
   constructor(){
 
-    setTimeout(() => {
-      this.title= "changed title"
-    }, 2000);
+    // setTimeout(() => {
+    //   this.title= "changed title"
+    // }, 2000);
+
+    
   }
  
 }
