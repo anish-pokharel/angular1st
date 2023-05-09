@@ -7,10 +7,10 @@ import { Todo } from 'src/app/Todo';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent implements OnInit  {
-  @Input() todo: Todo;
+  // @Input() todo: Todo;
   // todo: Todo = { sno: 0, title: '',desc:"", active: false }
   constructor(){
-    this.todo=this.todo
+    
   }
 
 
