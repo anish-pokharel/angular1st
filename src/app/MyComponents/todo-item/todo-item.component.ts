@@ -7,11 +7,12 @@ import { Todo } from 'src/app/Todo';
   styleUrls: ['./todo-item.component.css']
 })
 export class TodoItemComponent implements OnInit  {
-  // @Input() todo: Todo;
-  // todo: Todo = { sno: 0, title: '',desc:"", active: false }
+ @Input()todo: Todo;
   constructor(){
     
   }
+
+
 
 
   ngOnInit():void{}

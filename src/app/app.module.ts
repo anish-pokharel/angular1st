@@ -4,7 +4,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TodosComponent } from './MyComponents/todos/todos.component';
-import { TodoItemComponent } from './Mycomponents/todo-item/todo-item.component';
+// import { TodoItemComponent } from './Mycomponents/todo-item/todo-item.component';
+import { TodoItemComponent } from './MyComponents/todo-item/todo-item.component';
 
 @NgModule({
   declarations: [
