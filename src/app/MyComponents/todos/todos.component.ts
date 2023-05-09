@@ -9,26 +9,8 @@ import { Todo } from "../../Todo"
 export class TodosComponent implements OnInit {
   todos:Todo[]=[];
   constructor(){
-    this.todos=[
-      {
-        sno:1,
-        title:"this is titile",
-        desc:"Description ",
-         active: true
-      },
-      {
-        sno:2,
-        title:"this is titile2",
-        desc:"Description ",
-         active: true
-      },
-      {
-        sno:3,
-        title:"this is titile3",
-        desc:"Description ",
-         active: true
-      }
-    ]
+    this.todos=[];
+    
     // this.todos.push(
     //   {
     //     sno:3,
@@ -47,6 +29,11 @@ export class TodosComponent implements OnInit {
 console.log(todo)
 const index =this.todos.indexOf(todo);
 this.todos.splice(index,1)
+  }
+  addTodo(todo:Todo){
+console.log(todo)
+// const index =this.todos.indexOf(todo);
+this.todos.push(todo)
   }
 
 }

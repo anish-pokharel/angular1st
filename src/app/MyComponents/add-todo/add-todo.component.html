@@ -1,24 +1,30 @@
-<H4>ADD a todo</H4>
-<form>
-  <div class="form-group">
-    <label for="title">Todo Title </label>
-    <input
-      type="text"
-      class="form-control"
-      id="title"
-      aria-describedby="emailHelp"
-      placeholder="Enter Title"
-    />
-  </div>
-  <div class="form-group">
-    <label for="desc">Todo Description</label>
-    <input
-      type="text"
-      class="form-control"
-      id="desc"
-      placeholder="Description"
-    />
-  </div>
+<div class="my-3">
+  <H4>ADD a todo</H4>
+  <form (ngSubmit)="onSubmit()">
+    <div class="form-group">
+      <label for="title">Todo Title </label>
+      <input
+        type="text"
+        [(ngModel)]="title"
+        class="form-control"
+        name="title"
+        id="title"
+        aria-describedby="emailHelp"
+        placeholder="Enter Title"
+      />
+    </div>
+    <div class="form-group">
+      <label for="desc">Todo Description</label>
+      <input
+        type="text"
+        [(ngModel)]="desc"
+        id="desc"
+        name="desc"
+        class="form-control"
+        placeholder="Description"
+      />
+    </div>
 
-  <button type="submit" class="btn btn-sm btn-primary my-3">Submit</button>
-</form>
+    <button type="submit" class="btn btn-sm btn-primary my-3">Add Todo</button>
+  </form>
+</div>
